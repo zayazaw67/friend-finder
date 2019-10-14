@@ -4,12 +4,12 @@ const path = require("path");
 let PORT = process.env.PORT || 8080;
 
 let app = express();
+app.use(express.static(path.join(__dirname, "app/public")));
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static(path.join(__dirname, "app/public")));
 require("./app/routing/htmlRoutes.js")(app);
 
 app.listen(PORT, function() {
