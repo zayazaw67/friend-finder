@@ -10,8 +10,8 @@ app.use(express.static(path.join(__dirname, "app/public")));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-require("./app/routing/htmlRoutes.js")(app);
+require("./app/routing/htmlroutes.js")(app);
 
-app.listen(PORT, function() {
-    console.log("Server listening on: http://localhost:" + PORT);
-  });
+app.listen(PORT, function () {
+  console.log("Server listening on: http://localhost:" + PORT);
+});
