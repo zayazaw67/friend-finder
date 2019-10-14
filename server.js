@@ -5,6 +5,7 @@ const PORT = process.env.PORT || 8080;
 
 let app = express();
 
+app.use(express.static("public"));
 require("./app/routing/htmlRoutes.js")(app);
 
 // Sets up the Express app to handle data parsing
