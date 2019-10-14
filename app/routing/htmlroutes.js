@@ -6,7 +6,7 @@ module.exports = function(app) {
     });
   
     // Sends to home if wrong route is entered, but URL still has the random text
-    app.get("/", function(req, res) {
+    app.get("*", function(req, res) {
       res.sendFile(path.join(__dirname, "/../public/home.html"));
     });
   };

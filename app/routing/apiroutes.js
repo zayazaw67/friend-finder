@@ -18,17 +18,20 @@ function friendMatcher(app) {
             total: []
         };
         var answers = [];
-        for (var i = 0; i < req.body.total.length; i++) {
-            answers.push(parseInt(req.body.total[i]))
+        // console.log(req.body.scores)
+        for (var i = 0; i < req.body.scores.length; i++) {
+            answers.push(parseInt(req.body.scores[i]))
         }
         newEntry.total = answers;
         // checking new entry with friends.js data
         var scoreComparison = [];
         for (var i = 0; i < friendsArray.length; i++) {
+            // console.log(newEntry);
+            console.log(friendsArray);
             // math for checking score
             var score = 0;
             for (var j = 0; j < newEntry.total.length; j++) {
-                score += Math.abs(newEntry.total[j] - friendsArray[i].total[j]);
+                score += Math.abs(newEntry.total[j] - friendsArray[i].scores[j]);
             }
             scoreComparison.push(score);
         }
@@ -41,11 +44,11 @@ function friendMatcher(app) {
             }
         }
         var bestFriendMatch = friendsArray[bestMatch];
+        // takes user input and adds as new data 
+        friendsArray.push(newEntry);        
         // json
         res.json(bestFriendMatch);
-        // takes user input and adds as new data 
-        friendsArray.push(newEntry);
     });
-}
+};
 
 module.exports = friendMatcher;
