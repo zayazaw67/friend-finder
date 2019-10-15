@@ -154,6 +154,7 @@
        Submit</button>
   
       <hr>
+
       <footer class="footer">
         <div class="container">
           <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/zayazaw67/friend-finder">GitHub Repo</a></p>
@@ -249,7 +250,7 @@
           };
   
           // give sdata to friends api
-          $.post("/api/friends", userData, function(data) {
+          $.post("/api/friends", JSON.parse(userData), function(data) {
             // display best match name + photo
             $("#match-name").text(data.name);
             $("#match-img").attr("src", data.photo);

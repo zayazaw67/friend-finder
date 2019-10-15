@@ -1,7 +1,7 @@
 let friendsArray = [
     {
         "name": "Oliver",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo": "https://previews.123rf.com/images/apoev/apoev1806/apoev180600175/103284768-default-placeholder-businessman-half-length-portrait-photo-avatar-man-gray-color.jpg",
         "scores": [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]
     },
     {
@@ -16,7 +16,7 @@ let friendsArray = [
     },
     {
         "name": "Kara",
-        "photo": "https://previews.123rf.com/images/apoev/apoev1806/apoev180600175/103284768-default-placeholder-businessman-half-length-portrait-photo-avatar-man-gray-color.jpg",
+        "photo": "https://heartland.cc/wp-content/uploads/2018/02/female-placeholder.jpg",
         "scores": [2, 4, 1, 4, 2, 3, 5, 3, 5, 2]
     },
     {
