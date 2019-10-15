@@ -8,7 +8,7 @@ let friendsArray = [
         "name": "Barry",
         "photo": "https://teamiowaathletics.com/wp-content/uploads/2019/02/staff-placeholder-male.jpg",
         "scores": [1, 5, 2, 2, 1, 4, 4, 2, 1, 3]
-    },    
+    },
     {
         "name": "Gordon",
         "photo": "https://tekrabuilders.com/wp-content/uploads/2018/12/male-placeholder-image-300x300.jpeg",
