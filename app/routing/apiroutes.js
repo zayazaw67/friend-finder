@@ -1,7 +1,7 @@
 var path = require('path');
 var friendsArray = require('../data/friends.js');
 
-console.log(friendsArray)
+// console.log(friendsArray)
 
 function friendMatcher(app) {
     // displays all friends
