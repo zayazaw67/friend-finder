@@ -34,15 +34,16 @@ function friendMatcher(app) {
                 score += Math.abs(newEntry.total[j] - friendsArray[i].scores[j]);
             }
             scoreComparison.push(score);
-        }
-        // Determine the best match using the postion of best match in the friendsArray array
+        };
+        // determines best match
         var bestMatch = 0; // start with first object in array
         for (var i = 1; i < scoreComparison.length; i++) {
             // checks for lowest score for best match
             if (scoreComparison[i] <= scoreComparison[bestMatch]) {
                 bestMatch = i;
             }
-        }
+        };
+        // creates variable to call later
         var bestFriendMatch = friendsArray[bestMatch];
         // takes user input and adds as new data 
         friendsArray.push(newEntry);        
